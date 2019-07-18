@@ -1,8 +1,13 @@
 @import './vars.css';
 
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
 }
